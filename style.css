@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@500');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  overflow: hidden; /* Hides area below the screen to disable scrolling */
+
+  font-family: 'Roboto Flex';
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* Anims for clearBtn in anims.css */
+#clearBtn {
+  border: 2px solid;
+  border-radius: 8px;
+  border-color: white;
+  color: white;
+
+  padding: 1px;
+
+  font-size: 24px;
+  text-align: center;
+  width: 64px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Class below is for an outer grid containing t.t.t. board, to replace body as a containing grid */
+.outer-container {
+  margin-top: 5vh;
+
+  width: 100vw;
+  height: 80vh;
+
+  min-height: 400px;
+
+  align-self: center;
+
+  display: grid;
+  grid-template-columns: repeat(1);
+  /* background: red; */
+}
+
+.container {
+  position: relative;
+
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  width: 35vw;
+  min-width: 390px;
+  max-width: 780px;
+  height: 35vw;
+  min-height: 390px;
+  max-height: 780px;
+
+  gap: 2vw;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.item {
+  height: 100%;
+  width: 100%;
+  background-color: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: 500;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.win-line {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+/* Responsive .container gap in between X/O positions */
+
+@media (max-width: 635px) {
+  .container {
+    gap: 3vw;
+  }
+}
+
+@media (min-width: 636px) and (max-width: 680px) {
+  .container {
+    gap: 3vw;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1175px) {
+  .container {
+    gap: 2vw;
+  }
+}
+
+@media (min-width: 1176px) and (max-width: 1550px) {
+  .container {
+    gap: 2vw;
+  }
+}
+
+@media (min-width: 1551px) and (max-width: 1600px) {
+  .container {
+    gap: 1.5vw;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 2000px) {
+  .container {
+    gap: 1.25vw;
+  }
+}
+
+@media (min-width: 2001px) and (max-width: 2540px) {
+  .container {
+    gap: 1vw;
+  }
+}
+
+@media (min-width: 2541px) and (max-width: 4000px) {
+  .container {
+    gap: 0.75vw;
+  }
+}
+
+/* Responsive .item font size - NEEDS TESTING AND EDITING*/
+
+@media (max-width: 900px) {
+  .item {
+  font-size: 88px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  .item {
+  font-size: 92px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1175px) {
+  .item {
+  font-size: 100px;
+  }
+}
+
+@media (min-width: 1176px) and (max-width: 1300px) {
+  .item {
+  font-size: 104px;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 5000px) {
+  .item {
+    font-size: 124px;
+  }
+}

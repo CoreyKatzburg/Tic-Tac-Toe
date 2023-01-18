@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@500');
+
+.navbar {
+  margin: 12px;
+}
+
+.nav-item {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+
+  color: white;
+  font: 26px 'Roboto Flex';
+ }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="navbar.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="anims.css">
+</head>
+<body>
+   <div class="navbar">
+      <p class="nav-item">Tic Tac Toe</p>
+   </div>
+
+   <div class="btn-container">
+      <div id="clearBtn" onclick="clearBoard()">Clear</div>
+   </div>
+
+   <div class="outer-container">
+      <div class="container">
+         <div class="item" id="pos1" style="grid-column: 1; grid-row: 1;" onclick="getId(this)"></div>
+         
+         <div class="item" id="pos2" style="grid-column: 2; grid-row: 1;" onclick="getId(this)"></div>
+         
+         <div class="item" id="pos3" style="grid-column: 3; grid-row: 1;" onclick="getId(this)"></div>
+         
+         <div class="item" id="pos4" style="grid-column: 1; grid-row: 2;" onclick="getId(this)"></div>
+         
+         <div class="item" id="pos5" style="grid-column: 2; grid-row: 2;" onclick="getId(this)"></div>
+         
+         <div class="item" id="pos6" style="grid-column: 3; grid-row: 2;" onclick="getId(this)"></div>
+         
+         <div class="item" id="pos7" style="grid-column: 1; grid-row: 3;" onclick="getId(this)"></div>
+         
+         <div class="item" id="pos8" style="grid-column: 2; grid-row: 3;" onclick="getId(this)"></div>
+         
+         <div class="item" id="pos9" style="grid-column: 3; grid-row: 3;" onclick="getId(this)"></div>
+      </div>
+   </div>
+
+   <script src="board.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+#clearBtn:active {
+   animation: clearBtn-active 0.1s;
+   scale: 95%;
+ }
+ 
+ #clearBtn:not(:active) {
+   animation: clearBtn-notactive 0.1s;
+   scale: 100%;
+ }
+ 
+ @keyframes clearBtn-active {
+   0% {
+     scale: 100%;
+   }
+   100% {
+     scale: 95%;
+   }
+ }
+ 
+ @keyframes clearBtn-notactive {
+   0% {
+     scale: 95%;
+   }
+   100% {
+     scale: 100%;
+   }
+ }
+
+body {
+   background: linear-gradient(-45deg, red, green, blue, yellow);
+   background-size: 400% 400%;
+   animation: background-anim 15s ease infinite;
+}
+
+ @keyframes background-anim {
+   0% {
+      background-position: 0 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0 50%;
+   }
+ }
+
+.win-anim {
+  animation: winAnim 3s;
+  scale: 110%;
+  /* background-color: green; */
+}
+
+@keyframes winAnim {
+  0% {
+     scale: 100%;
+     background-color: none;
+  }
+  100% {
+     scale: 110%;
+     background-color: green;
+  }
+}
